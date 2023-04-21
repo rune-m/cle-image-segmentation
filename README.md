@@ -12,7 +12,7 @@ The projects goal is to make a machine learning model that can take a frame from
 
 ## Raw data
 
-All data used in this project is recorded at Haukeland University Hospital. From them I go 7 good quality videos with lengths between 8 and 15 minutes. Below is a frame from one of the videos:
+All data used in this project is recorded at Haukeland University Hospital. From them I got 7 good quality videos with lengths between 8 and 15 minutes. Below is a frame from one of the videos:
 
 ![Example frame](assets/example_frame.png)
 
@@ -22,7 +22,7 @@ These steps were taken to preprocess the raw data into training data:
 
 1. Convert each frame of the videos into a PNG-file using the Python library **_cv2_**. (see **_utils/video_frame_extraction.py_**)
 2. Crop each image to 884x884 so it only contains the actual image of the patients larynx. (see **_utils/crop_images.py_**)
-3. Using [Label studio](https://github.com/heartexlabs/label-studio) to label the larynx opening for each of the images. Then export all the images with a COCO-file which contains all data of the labelling.
+3. Using [Label studio](https://github.com/heartexlabs/label-studio) to label the larynx opening for each of the images (got help from a domain expert for the labeling). Then export all the images with a COCO-file which contains all data of the labelling.
 
 Screenshot from Label Studio:
 ![Label Studio](assets/label_studio.png)

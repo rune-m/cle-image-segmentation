@@ -1,3 +1,3 @@
 # Data
 
-For privacy reasons, all data is not publicly available.
+For privacy reasons, data is not publicly available.
